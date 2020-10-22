@@ -167,16 +167,22 @@ header{
     align-items: center;
     text-align: left;
 }
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 150px;
+}
 .footer a{
     text-decoration: none;
     color: #d9ecf2;
-    font-size: 14px;
+    font-size: 20px;
     transition: 0.5s;
 }
 .footer a:hover{
     text-decoration: underline;
     color: #1aa6b7;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 /* mobil */
