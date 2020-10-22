@@ -2,28 +2,132 @@
     margin:0;
     padding:0;
 }
-body{font-family: 'Open Sans', sans-serif; display: flex; flex-direction: column;}
+body{font-family: 'Open Sans', sans-serif; display: flex; flex-direction: column; height: 200vh;}
 /*Head*/
-header{
-    width: 100%; height: 330px; background-color: #1aa6b7;
+header{ 
     display: flex; justify-content: space-around;
 }
-.header{width: 100%; height: 330px; background-color: #1aa6b7; margin:0 auto; display: flex;  flex-direction: column;}
-.main{display: flex;  flex-direction: row; justify-content: center;}
-.profile{margin-top: 30px; margin-left: 60px; display: flex; justify-content: center;}
-.profile img{width: 20%;  border-radius: 300px; border: 1px solid #d9ecf2;}
-
-.name{font-size: 50px; text-align: justify; color: #ff414d; margin-top: 30px; margin-left: 20px; display: flex; justify-content: left;}
-.comment{ width: 600px; font-size: 14px; color: #d9ecf2; margin-top: 10px; margin-left: 30px; display: flex; justify-content: left;}
-.menu{display: flex; justify-content: space-around; margin-left: 50px; }
-.menu ul li{list-style-type: none; display: inline-block; padding: 5px; margin: 5px; color: #d9ecf2; font-size: 18px;}
-.menu a{color: #d9ecf2;  text-decoration: none; font-size: 18px;  padding: 6px; transition: 0.5s;}
-.menu li:hover a{color: #ff414d; border: 5px solid #d9ecf2; border-radius: 10px; background-color: #d9ecf2;}
-
-/*Container*/
-.container{
-    width: 960px; height: 600px; margin:0 auto; border: 1px solid #cccccc; background-color: #ffffff; margin-top: -50px;
+.header{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(255,255,255,0.4)), url("../images/head1.jpg") ;
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  
 }
 
+.btn{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+}
+.btn ul hr{
+    height: 70%;
+    color: white;
+    background-color: white;
+}
+.btn ul{
+    width: 70%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+.btn a{
+    color: #d9ecf2;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+.btn a:hover{
+    background-color: rgba(255,255,255,0.3);
+    padding: 8px;
+    border-radius: 3px ;
+}
+
+.name1{
+    color: #f56a79;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20%;
+}
+.name2{
+    color: #f56a79;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+/*Container*/
+.about{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d9ecf2;
+}
+.title{
+    font-size: 24px;
+    padding: 5px;
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-family: 'Crete Round', serif;
+    background-color: rgba(0,0,0,0.1);
+}
+.paragraph{
+    font-size: 12px;
+    padding: 5px;
+    color: black;
+    font-family: 'Crete Round', serif;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.edu{ width:100%; margin-right: 50%; margin-top: 20px; display: flex; justify-content: space-around; flex-direction: row; }
+.edu ul li{text-decoration: none; list-style-type: none;}
+.edu ul li h6{margin-bottom: 20px;}
+
+.section{
+    width: 100%; 
+    height: 75px; 
+    background-color: #1aa6b7;
+}
+.skills{    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d9ecf2;}
+    
+    .skill{width: 70½; display: flex; flex-direction: row; align-items: center; margin-right: 700px; margin-top: 20px; }
+    .skill :nth-child(2){
+        width: 200px;
+        height: 20px;
+        background-color: #f56a79;
+        margin-left: 5px;
+    }
 /*Footer*/
 .footer{width: 100%; height: 100px; background-color: #f56a79;}
+
+/* mobil */
+@media only screen and (max-width:768px){
+
+}
